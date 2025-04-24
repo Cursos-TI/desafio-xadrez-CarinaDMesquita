@@ -28,5 +28,49 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+    // Início do Jogo
+    printf("=== ESTAMOS COMEÇANDO O DESAFIO DE XADREZ - MATECHECK ===\n\n");   
+
+
+    printf("Mova a TORRE 5 casas para a direita!\n");
+    
+    // mover a torre 5 casas para a direita
+    for (int t = 0; t < 5; t++) {
+        printf("Torre - Direita\n"); // imprime a direção do movimento
+    }
+    
+
+    printf("\n");
+
+
+    printf("Mova o BISPO 5 casas na diagonal para cima à direita!\n");
+    
+    int b = 0; // variável declarada 
+
+    while(b < 5) { // mover o bispo 5 casas na diagonal para cima à direita
+
+        printf("Bispo - Cima à direita!\n");
+        b++;
+    }
+    
+
+    printf("\n");
+
+
+    printf("Mova a RAINHA 8 casas para a esquerda!\n");
+
+    int r = 1; // variável declarada
+
+    do {
+        printf("Rainha - Esquerda!\n");
+
+        r++;
+    } while (r <= 8); // mover a rainha 8 casas para a esquerda.
+
+
+    printf("\n");
+
+    printf("Fim do jogo!\n");
+
     return 0;
 }
