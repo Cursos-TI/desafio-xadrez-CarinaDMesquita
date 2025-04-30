@@ -21,56 +21,57 @@ int main() {
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    
+    int cavalo = 1; //variável declarada para executar o loop.
 
     // Início do Jogo
     printf("=== ESTAMOS COMEÇANDO O DESAFIO DE XADREZ - MATECHECK ===\n\n");   
 
 
-    printf("Mova a TORRE 5 casas para a direita!\n");
+    printf("\nMova a TORRE 5 casas para a direita!\n");
     
-    // mover a torre 5 casas para a direita
-    for (int t = 0; t < 5; t++) {
+    // estrutura de repetição for;  
+    for (int torre = 0; torre < 5; torre++) { // mover a torre 5 casas para a direita 
         printf("Torre - Direita\n"); // imprime a direção do movimento
     }
     
 
-    printf("\n");
-
-
-    printf("Mova o BISPO 5 casas na diagonal para cima à direita!\n");
+    printf("\nMova o BISPO 5 casas na diagonal para cima à direita!\n");
     
-    int b = 0; // variável declarada 
+    int bispo = 0; // variável declarada 
 
-    while(b < 5) { // mover o bispo 5 casas na diagonal para cima à direita
+    // estrutura de repetição while
+    while(bispo < 5) { // mover o bispo 5 casas na diagonal para cima à direita
 
         printf("Bispo - Cima à direita!\n");
-        b++;
+        bispo++;
     }
     
 
-    printf("\n");
+    printf("\nMova a RAINHA 8 casas para a esquerda!\n");
 
+    int rainha = 1; // variável declarada
 
-    printf("Mova a RAINHA 8 casas para a esquerda!\n");
-
-    int r = 1; // variável declarada
-
+    // estrutura de repetição do-while
     do {
         printf("Rainha - Esquerda!\n");
 
-        r++;
-    } while (r <= 8); // mover a rainha 8 casas para a esquerda.
+        rainha++;
+    } while (rainha <= 8); // mover a rainha 8 casas para a esquerda.
 
 
-    printf("\n");
 
-    printf("Fim do jogo!\n");
+    printf("\nMova o CAVALO 2 casas para baixo e 1 casa para a esquerda!\n");
 
+    do {  //loops aninhados do-while e for
+        for (int i = 0; i < 2; i++) { // mover o cavalo 2 casas para baixo e 1 casa para a esquerda.
+            printf("Cavalo - Baixo\n");
+        }
+        printf("Cavalo - Esquerda\n");
+    } while (--cavalo); // --cavalo → vai decrementar primeiro e depois testar se o valor ainda é diferente de 0.
+    
+
+    printf("\nFim do jogo!\n");
+    
     return 0;
 }
