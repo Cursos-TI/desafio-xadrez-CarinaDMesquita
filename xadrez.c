@@ -23,6 +23,7 @@ void moverRainhaRecursiva(int casasRainha) {
     }
 }
 
+
 int main() {
 
     // Início do Jogo
